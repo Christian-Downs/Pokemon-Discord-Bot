@@ -1,5 +1,6 @@
 import discord
-import discord
+
+import requests
 
 # IMPORT THE OS MODULE.
 import os
@@ -17,7 +18,7 @@ bot = discord.Client()
 
 @bot.event
 async def on_message(message):
-    if message.content == "test":
+    if message.content == "$Newtest":
         await message.channel.send("testing is fun!")
 
 
